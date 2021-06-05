@@ -1,0 +1,55 @@
+body {
+  background-image: url("../images/Flourishtry-Background-Main.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0 5% 0 5%;
+}
+
+#header-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: black;
+  border-radius: 0 0 20px 20px;
+}
+
+#header-item1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 35px;
+  margin: auto 0 auto 0;
+  padding: 5px 20px;
+}
+
+#header-item1 a {
+  text-decoration: none;
+  font-weight: bold;
+  color: lightskyblue;
+}
+
+#header-item1 .hover-over {
+  color: grey;
+  transition: color 1s;
+}
+
+#header-item2 ul li {
+  font-family: "Kaushan Script", cursive;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline;
+  font-size: 20px;
+}
+
+#header-item2 ul li a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+#header-item2 ul li a:hover {
+  color: gold;
+  transition: color 1s;
+}
+
+#header-item3 {
+  color: white;
+  margin: auto 0 auto 0;
+}
