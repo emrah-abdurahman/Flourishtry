@@ -19,19 +19,19 @@ body {
   padding: 5px 20px;
 }
 
-#header-item1 a {
+#home-link {
   text-decoration: none;
   font-weight: bold;
-  color: lightskyblue;
+  color: white;
 }
 
-#home-link .mouse-over {
-  color: grey;
+.home-link-mouse-over {
+  color: lightseagreen !important;
   transition: color 1s;
 }
 
-#home-link .mouse-out {
-  color: white;
+.home-link-mouse-out {
+  color: white !important;
   transition: color 1s;
 }
 
@@ -49,8 +49,13 @@ body {
   margin-right: 20px;
 }
 
-#header-item2 ul li a:hover {
-  color: gold;
+.nav-link-mouse-over {
+  color: gold !important;
+  transition: color 1s;
+}
+
+.nav-link-mouse-out {
+  color: white !important;
   transition: color 1s;
 }
 
