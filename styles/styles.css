@@ -76,6 +76,7 @@ body {
 }
 
 #header-item3 ul li a {
+  font-weight: bold;
   text-decoration: none;
   color: white;
   margin-right: 20px;
