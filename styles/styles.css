@@ -35,6 +35,11 @@ body {
   transition: color 1s;
 }
 
+#header-item2 {
+  display: grid;
+  justify-content: center;
+}
+
 #header-item2 ul li {
   font-family: "Kaushan Script", cursive;
   font-weight: bold;
@@ -60,6 +65,28 @@ body {
 }
 
 #header-item3 {
+  font-family: "Kaushan Script", cursive;
+  display: grid;
+  justify-content: center;
+}
+
+#header-item3 ul li {
+  font-size: 20px;
+  display: inline;
+}
+
+#header-item3 ul li a {
+  text-decoration: none;
   color: white;
-  margin: auto 0 auto 0;
+  margin-right: 20px;
+}
+
+.sign-up-log-in-mouse-over {
+  color: pink !important;
+  transition: color 1s;
+}
+
+.sign-up-log-in-mouse-out {
+  color: white !important;
+  transition: color 1s;
 }
