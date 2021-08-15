@@ -5,110 +5,166 @@ body {
   margin: 0;
 }
 
+#container {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 2% 0 2%;
+}
+
 #header-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  background-color: black;
-  /* border-radius: 0 0 20px 20px; */
-  margin: 0 5% 0 5%;
-}
-
-#header-item1 {
+  background-color: rgb(167, 167, 167);
   font-family: "Kaushan Script", cursive;
-  font-size: 35px;
-  margin: auto 0 auto 0;
-  padding: 5px 20px;
-}
-
-#home-link {
-  text-decoration: none;
   font-weight: bold;
-  color: white;
+  height: auto;
+  padding: 10px;
+  text-transform: uppercase;
 }
 
-.home-link-mouse-over {
-  color: lightseagreen !important;
-  transition: color 1s;
+#header-container h1 {
+  margin: 0;
+}
+
+#header-container a {
+  color: white;
+  text-decoration: none;
+}
+
+#nav-section-1 {
+  display: inline-block;
+  text-align: center;
+  width: 20%;
+}
+
+.red {
+  color: red;
+}
+
+.orange {
+  color: orange;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.indigo {
+  color: indigo;
+}
+
+.violet {
+  color: violet;
+}
+
+/* .home-link-mouse-over {
+  color: pink !important;
+  transition: color 0.5s;
 }
 
 .home-link-mouse-out {
   color: white !important;
-  transition: color 1s;
-}
+  transition: color 0.5s;
+} */
 
-#header-item2 {
-  display: grid;
-  justify-content: center;
-  border: 2px solid red;
-}
-
-#header-item2 ul li {
-  /* border: 2px solid red; */
-  font-family: "Kaushan Script", cursive;
-  font-weight: bold;
-  text-transform: uppercase;
+#nav-section-2 {
   display: inline-block;
-  font-size: 20px;
+  text-align: center;
+  width: 50%;
 }
 
-#header-item2 ul li a {
-  color: white;
-  text-decoration: none;
-  margin-right: 20px;
+#nav-section-2 li,
+#nav-section-3 li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+#nav-section-3 {
+  display: inline-block;
+  width: 20%;
 }
 
 .nav-link-mouse-over {
-  color: gold !important;
-  transition: color 1s;
+  color: lightblue !important;
+  transition: color 0.5s;
 }
 
 .nav-link-mouse-out {
   color: white !important;
-  transition: color 1s;
-}
-
-/* #navigation-sublink-container {
-  border: 2px solid red;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  margin: 0 5% 0 5%;
-} */
-
-/* #products-navigation-dropdown-content {
-  position: relative;
-  left: 685px;
-  width: 80px;
-  background-color: black;
-  border: 2px solid red;
-  margin-top: 0;
-  margin-bottom: 0;
-  list-style-type: none;
-} */
-
-#header-item3 {
-  font-family: "Kaushan Script", cursive;
-  display: grid;
-  justify-content: center;
-}
-
-#header-item3 ul li {
-  font-size: 20px;
-  display: inline;
-}
-
-#header-item3 ul li a {
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
-  margin-right: 20px;
+  transition: color 0.5s;
 }
 
 .sign-up-log-in-mouse-over {
-  color: pink !important;
-  transition: color 1s;
+  color: orange !important;
+  transition: color 0.5s;
 }
 
 .sign-up-log-in-mouse-out {
   color: white !important;
-  transition: color 1s;
+  transition: color 0.5s;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.05);
+  height: 2000px;
+  width: 100%;
+}
+
+main #offers {
+  background-color: pink;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+  font-size: 120%;
+}
+
+main #offers span {
+  text-decoration: underline;
+}
+
+main #slogan {
+  /* border: 2px solid red; */
+  font-family: "Kaushan Script", cursive;
+  font-weight: bold;
+  font-size: 150%;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}
+
+main #slogan p:first-child,
+main #slogan p:nth-child(2) {
+  color: blue;
+  font-size: 250%;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#images-container {
+  /* border: 2px solid red; */
+}
+
+#images {
+  /* border: 2px solid red; */
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#images img {
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.25);
+  height: 320px;
+  margin-left: 100px;
+  width: 320px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
 }

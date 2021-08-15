@@ -1,23 +1,33 @@
+const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+
 // Get the home link element which is the Flourishtry logo in the top left of the navbar
 const homeLink = document.getElementById("home-link");
 // Get all navigation links
 const navLinks = document.getElementsByClassName("nav-link");
 // Get both the sign up and log in links
 const signUpLoginLinks = document.getElementsByClassName("sign-up-log-in");
+// Get the footer by tagname
+const footer = document.getElementsByTagName("footer");
 
 // Add a mouseover event listener to the Flourishtry home logo
 // This will add and remove the appropriate CSS classes
 homeLink.addEventListener("mouseover", function () {
-  homeLink.classList.add("home-link-mouse-over");
-  homeLink.classList.remove("home-link-mouse-out");
+  // homeLink.classList.add("home-link-mouse-over");
+  // homeLink.classList.remove("home-link-mouse-out");
+  const randomColor = Math.floor(Math.random() * 6) + 1;
+  homeLink.style.borderBottom = `5px solid ${colors[randomColor]}`;
 });
 
 // Add a mouseout event listener to the Flourishtry home logo
 // This will add and remove the appropriate CSS classes
 homeLink.addEventListener("mouseout", function () {
-  homeLink.classList.add("home-link-mouse-out");
-  homeLink.classList.remove("home-link-mouse-over");
+  // homeLink.classList.add("home-link-mouse-out");
+  // homeLink.classList.remove("home-link-mouse-over");
+  homeLink.style.borderBottom = "";
 });
+const today = new Date();
+const year = today.getFullYear();
+footer.innerHTML = `<p>&copy  ; Flourishtry ${year}</p>`;
 
 // Use a for of loop to iterate through the HTMLCollection and add the appropriate event listeners to each navigation link
 for (let navLink of navLinks) {
