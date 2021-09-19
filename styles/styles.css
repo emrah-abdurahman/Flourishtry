@@ -1,3 +1,5 @@
+/* Body and container site-wide CSS settings */
+
 body {
   background-image: url("../images/Flourishtry-Background-Main.jpg");
   background-size: 100%;
@@ -10,29 +12,7 @@ body {
   margin: 0 1.5%;
 }
 
-#header-container {
-  background-color: rgb(167, 167, 167);
-  font-family: "Kaushan Script", cursive;
-  font-weight: bold;
-  height: auto;
-  padding: 10px;
-  text-transform: uppercase;
-}
-
-#header-container h1 {
-  margin: 0;
-}
-
-#header-container a {
-  color: white;
-  text-decoration: none;
-}
-
-#nav-section-1 {
-  display: inline-block;
-  text-align: center;
-  width: 20%;
-}
+/* Flourishtry Logo Colours */
 
 .red {
   color: red;
@@ -62,26 +42,81 @@ body {
   color: violet;
 }
 
-/* .home-link-mouse-over {
-  color: pink !important;
-  transition: color 0.5s;
+/* Site-Wide Header and Navigation Styling */
+
+#header-container {
+  background-color: rgb(167, 167, 167);
+  box-shadow: 0 5px 10px rgb(167 167 167);
+  font-family: "Kaushan Script", cursive;
+  font-weight: bold;
+  height: auto;
+  position: sticky;
+  text-transform: uppercase;
+  top: 0;
 }
 
-.home-link-mouse-out {
-  color: white !important;
-  transition: color 0.5s;
-} */
+#header-container h1 {
+  margin: 0;
+}
+
+#header-container a {
+  color: white;
+  text-decoration: none;
+}
+
+header #offers {
+  background-color: pink;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+  font-size: 120%;
+}
+
+header #offers span {
+  text-decoration: underline;
+}
+
+nav {
+  padding-top: 10px;
+}
+
+#nav-section-1 {
+  display: inline-block;
+  text-align: center;
+  width: 20%;
+}
 
 #nav-section-2 {
   display: inline-block;
+  position: relative;
   text-align: center;
   width: 50%;
+  z-index: 2;
 }
 
 #nav-section-2 li,
 #nav-section-3 li {
   display: inline-block;
   margin-right: 30px;
+}
+
+#nav-link-products ul {
+  background-color: rgb(167, 167, 167);
+  display: none;
+  padding: 25px;
+  position: absolute;
+  text-align: center;
+  left: 274px;
+  width: 124px;
+  z-index: 1;
+}
+
+#nav-link-products ul li:first-child {
+  margin-top: 33px;
+}
+
+#nav-link-products ul li {
+  margin-bottom: 30px;
 }
 
 #nav-section-3 {
@@ -91,11 +126,11 @@ body {
 
 .nav-link-mouse-over {
   color: lightblue !important;
+  cursor: pointer;
   transition: color 0.5s;
 }
 
 .nav-link-mouse-out {
-  color: white !important;
   transition: color 0.5s;
 }
 
@@ -105,35 +140,23 @@ body {
 }
 
 .sign-up-log-in-mouse-out {
-  color: white !important;
   transition: color 0.5s;
 }
 
 main {
   background-color: rgba(0, 0, 0, 0.05);
   height: 2000px;
+  padding-top: 10px;
   width: 100%;
 }
 
-main #offers {
-  background-color: pink;
-  font-weight: bold;
-  padding: 5px;
-  text-align: center;
-  font-size: 120%;
-}
-
-main #offers span {
-  text-decoration: underline;
-}
-
 main #slogan {
-  /* border: 2px solid red; */
   font-family: "Kaushan Script", cursive;
   font-weight: bold;
   font-size: 150%;
   margin: auto;
   text-align: center;
+  text-transform: uppercase;
   width: 50%;
 }
 
@@ -145,12 +168,7 @@ main #slogan p:nth-child(2) {
   margin-top: 0;
 }
 
-#images-container {
-  /* border: 2px solid red; */
-}
-
 #images {
-  /* border: 2px solid red; */
   margin-left: 10%;
   margin-right: 10%;
 }

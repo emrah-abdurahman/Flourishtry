@@ -4,40 +4,50 @@ const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
 const homeLink = document.getElementById("home-link");
 // Get all navigation links
 const navLinks = document.getElementsByClassName("nav-link");
+// Get all sub navigation menus
+const subNavMenus = document.getElementsByClassName("sub-nav-menu");
 // Get both the sign up and log in links
 const signUpLoginLinks = document.getElementsByClassName("sign-up-log-in");
-// Get the footer by tagname
-const footer = document.getElementsByTagName("footer");
 
-// Add a mouseover event listener to the Flourishtry home logo
+// Add a mouseover and mouseout event listener to the Flourishtry home logo
 // This will add and remove the appropriate CSS classes
 homeLink.addEventListener("mouseover", function () {
-  // homeLink.classList.add("home-link-mouse-over");
-  // homeLink.classList.remove("home-link-mouse-out");
   const randomColor = Math.floor(Math.random() * 6) + 1;
   homeLink.style.borderBottom = `5px solid ${colors[randomColor]}`;
 });
-
-// Add a mouseout event listener to the Flourishtry home logo
-// This will add and remove the appropriate CSS classes
 homeLink.addEventListener("mouseout", function () {
-  // homeLink.classList.add("home-link-mouse-out");
-  // homeLink.classList.remove("home-link-mouse-over");
   homeLink.style.borderBottom = "";
 });
-const today = new Date();
-const year = today.getFullYear();
-footer.innerHTML = `<p>&copy  ; Flourishtry ${year}</p>`;
 
 // Use a for of loop to iterate through the HTMLCollection and add the appropriate event listeners to each navigation link
 for (let navLink of navLinks) {
   navLink.addEventListener("mouseover", function () {
     navLink.classList.add("nav-link-mouse-over");
     navLink.classList.remove("nav-link-mouse-out");
+    switch (this.innerText) {
+      case "PRODUCTS":
+        document.querySelector("#nav-link-products-dropdown").style.display =
+          "block";
+    }
   });
   navLink.addEventListener("mouseout", function () {
     navLink.classList.add("nav-link-mouse-out");
     navLink.classList.remove("nav-link-mouse-over");
+    switch (this.innerText) {
+      case "PRODUCTS":
+        document.querySelector("#nav-link-products-dropdown").style.display =
+          "none";
+    }
+  });
+}
+
+// Use a for of loop to iterate through the sub navigation menus and add the appropriate event listeners to each sub navigation menu
+for (let subNavMenu of subNavMenus) {
+  subNavMenu.addEventListener("mouseover", function () {
+    subNavMenu.style.display = "block";
+  });
+  subNavMenu.addEventListener("mouseout", function () {
+    subNavMenu.style.display = "none";
   });
 }
 

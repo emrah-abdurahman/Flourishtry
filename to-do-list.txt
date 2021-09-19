@@ -1,5 +1,16 @@
-To-Do List:
+To-Do List (Current):
 - Design and implement a navigation dropdown menu when user hovers over navigation links
-
+    - I want to be able to set up event listeners for all the main navigation links and pass the appropriate element 
+      to display the dropdown menu for
+--------------------------------------------------------------------------------------------------------------------
+To-Do List (Future):
+- Implement a cookie feature on the site
+- Go through HTML and CSS implementation to see what can be improved and/or removed
+- Fix the site logo hover issue where the underlining colour is not constant as the user stays hovered over it
+- Add a blogging section to the site which is only available to logged in users
+- Break down my JavaScript code into modular files to make them more manageable and organized
+- Make header and navigation menu stay at the top of the viewport when the user scrolls
+--------------------------------------------------------------------------------------------------------------------
 Feature Ideas:
 - Have a dynamic date and time display as well as a polite visitor greeting message in the header section
+- Have a shopping cart to add and review items
