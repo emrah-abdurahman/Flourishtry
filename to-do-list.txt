@@ -1,0 +1,5 @@
+To-Do List:
+- Design and implement a navigation dropdown menu when user hovers over navigation links
+
+Feature Ideas:
+- Have a dynamic date and time display as well as a polite visitor greeting message in the header section
