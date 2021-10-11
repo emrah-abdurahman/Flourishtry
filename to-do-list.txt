@@ -10,6 +10,7 @@ To-Do List (Future):
 - Add a blogging section to the site which is only available to logged in users
 - Break down my JavaScript code into modular files to make them more manageable and organized
 - Make header and navigation menu stay at the top of the viewport when the user scrolls
+- Have a button which allows the user to scroll to the top of the page
 --------------------------------------------------------------------------------------------------------------------
 Feature Ideas:
 - Have a dynamic date and time display as well as a polite visitor greeting message in the header section

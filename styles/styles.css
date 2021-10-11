@@ -46,7 +46,7 @@ body {
 
 #header-container {
   background-color: rgb(167, 167, 167);
-  box-shadow: 0 5px 10px rgb(167 167 167);
+  box-shadow: 0 10px 15px rgb(0, 0, 0);
   font-family: "Kaushan Script", cursive;
   font-weight: bold;
   height: auto;
@@ -88,35 +88,39 @@ nav {
 
 #nav-section-2 {
   display: inline-block;
-  position: relative;
   text-align: center;
   width: 50%;
-  z-index: 2;
 }
 
-#nav-section-2 li,
+#nav-section-2 > li,
 #nav-section-3 li {
   display: inline-block;
+  list-style-type: none;
   margin-right: 30px;
 }
 
-#nav-link-products ul {
-  background-color: rgb(167, 167, 167);
+#nav-link-products {
+  position: relative;
+}
+
+sub-nav-menu {
   display: none;
-  padding: 25px;
+}
+
+#nav-link-products-dropdown {
+  background-color: rgb(167, 167, 167);
+  box-shadow: 0 10px 15px rgb(0, 0, 0);
+  display: none;
+  padding-left: 0;
   position: absolute;
   text-align: center;
-  left: 274px;
-  width: 124px;
-  z-index: 1;
+  left: -40px;
+  width: auto;
 }
 
-#nav-link-products ul li:first-child {
-  margin-top: 33px;
-}
-
-#nav-link-products ul li {
-  margin-bottom: 30px;
+#nav-link-products li {
+  list-style-type: none;
+  margin: 30px;
 }
 
 #nav-section-3 {
@@ -146,7 +150,7 @@ nav {
 main {
   background-color: rgba(0, 0, 0, 0.05);
   height: 2000px;
-  padding-top: 10px;
+  padding-top: 20px;
   width: 100%;
 }
 

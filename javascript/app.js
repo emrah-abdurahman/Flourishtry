@@ -20,6 +20,7 @@ homeLink.addEventListener("mouseout", function () {
 });
 
 // Use a for of loop to iterate through the HTMLCollection and add the appropriate event listeners to each navigation link
+// Use a for of loop to iterate through the sub navigation menus and add the appropriate event listeners to each sub navigation menu
 for (let navLink of navLinks) {
   navLink.addEventListener("mouseover", function () {
     navLink.classList.add("nav-link-mouse-over");
@@ -27,6 +28,9 @@ for (let navLink of navLinks) {
     switch (this.innerText) {
       case "PRODUCTS":
         document.querySelector("#nav-link-products-dropdown").style.display =
+          "block";
+      case "SERVICES":
+        document.querySelector("#nav-link-services-dropdown").style.display =
           "block";
     }
   });
@@ -37,11 +41,13 @@ for (let navLink of navLinks) {
       case "PRODUCTS":
         document.querySelector("#nav-link-products-dropdown").style.display =
           "none";
+      case "SERVICES":
+        document.querySelector("#nav-link-services-dropdown").style.display =
+          "none";
     }
   });
 }
 
-// Use a for of loop to iterate through the sub navigation menus and add the appropriate event listeners to each sub navigation menu
 for (let subNavMenu of subNavMenus) {
   subNavMenu.addEventListener("mouseover", function () {
     subNavMenu.style.display = "block";
