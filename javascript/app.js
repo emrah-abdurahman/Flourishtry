@@ -1,13 +1,15 @@
+// An array of colors for the company logo
 const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
 
 // Get the home link element which is the Flourishtry logo in the top left of the navbar
-const homeLink = document.getElementById("home-link");
+const homeLink = document.querySelector("#home-link");
 // Get all navigation links
-const navLinks = document.getElementsByClassName("nav-link");
+const navLinks = document.querySelectorAll(".nav-link");
+console.log(navLinks);
 // Get all sub navigation menus
-const subNavMenus = document.getElementsByClassName("sub-nav-menu");
+const subNavMenus = document.querySelectorAll(".sub-nav-menu");
 // Get both the sign up and log in links
-const signUpLoginLinks = document.getElementsByClassName("sign-up-log-in");
+const signUpLoginLinks = document.querySelectorAll(".sign-up-log-in");
 
 // Add a mouseover and mouseout event listener to the Flourishtry home logo
 // This will add and remove the appropriate CSS classes
@@ -19,8 +21,8 @@ homeLink.addEventListener("mouseout", function () {
   homeLink.style.borderBottom = "";
 });
 
-// Use a for of loop to iterate through the HTMLCollection and add the appropriate event listeners to each navigation link
-// Use a for of loop to iterate through the sub navigation menus and add the appropriate event listeners to each sub navigation menu
+/********** Adding event listeners to the main and sub navigation links **********/
+// for of loop to iterate through the HTMLCollection and add the appropriate event listeners to each navigation link
 for (let navLink of navLinks) {
   navLink.addEventListener("mouseover", function () {
     navLink.classList.add("nav-link-mouse-over");
@@ -29,9 +31,11 @@ for (let navLink of navLinks) {
       case "PRODUCTS":
         document.querySelector("#nav-link-products-dropdown").style.display =
           "block";
+        break;
       case "SERVICES":
         document.querySelector("#nav-link-services-dropdown").style.display =
           "block";
+        break;
     }
   });
   navLink.addEventListener("mouseout", function () {
@@ -40,14 +44,15 @@ for (let navLink of navLinks) {
     switch (this.innerText) {
       case "PRODUCTS":
         document.querySelector("#nav-link-products-dropdown").style.display =
-          "none";
+          "";
       case "SERVICES":
         document.querySelector("#nav-link-services-dropdown").style.display =
-          "none";
+          "";
     }
   });
 }
 
+// Use a for of loop to iterate through the sub navigation menus and add the appropriate event listeners to each sub navigation menu
 for (let subNavMenu of subNavMenus) {
   subNavMenu.addEventListener("mouseover", function () {
     subNavMenu.style.display = "block";
