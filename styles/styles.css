@@ -2,7 +2,7 @@
 
 body {
   background-image: url("../images/Flourishtry-Background-Main.jpg");
-  background-size: 100%;
+  background-size: contain;
   background-repeat: no-repeat;
   margin: 0;
 }
@@ -58,6 +58,7 @@ body {
 
 #header-container h1 {
   margin: 0;
+  padding: 10px;
 }
 
 #header-container a {
@@ -68,17 +69,12 @@ body {
 header #offers {
   background-color: pink;
   font-size: 120%;
-  font-weight: bold;
   padding: 5px;
   text-align: center;
 }
 
 header #offers span {
   text-decoration: underline;
-}
-
-nav {
-  padding-top: 10px;
 }
 
 #nav-section-1 {
@@ -89,20 +85,20 @@ nav {
 
 #nav-section-2 {
   display: inline-block;
+  margin: 0;
   text-align: center;
   width: 50%;
+}
+
+#nav-section-2 li {
+  position: relative;
 }
 
 #nav-section-2 li,
 #nav-section-3 li {
   display: inline-block;
   list-style-type: none;
-  margin-right: 30px;
-}
-
-#nav-link-products,
-#nav-link-services {
-  position: relative;
+  padding: 10px;
 }
 
 .sub-nav-menu {
@@ -112,12 +108,15 @@ nav {
 #nav-link-products-dropdown,
 #nav-link-services-dropdown {
   background-color: rgb(167, 167, 167);
+  border: 1px solid blaCK;
   box-shadow: 0 10px 15px rgb(0, 0, 0);
   padding-left: 0;
   position: absolute;
   text-align: center;
   left: -40px;
+  top: 90px;
   width: auto;
+  /* z-index: -1; */
 }
 
 #nav-link-products li {
@@ -127,6 +126,7 @@ nav {
 
 #nav-section-3 {
   display: inline-block;
+  margin: 0;
   width: 20%;
 }
 
@@ -188,7 +188,7 @@ main #slogan p:nth-child(2) {
 }
 
 footer {
-  background-color: black;
+  background-color: rgb(167, 167, 167);
   color: white;
   font-weight: bold;
   padding: 5px;
