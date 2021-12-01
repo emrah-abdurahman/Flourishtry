@@ -1,25 +1,11 @@
 // An array of colors for the company logo
 const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
-
-// Get the home link element which is the Flourishtry logo in the top left of the navbar
-const homeLink = document.querySelector("#home-link");
 // Get all navigation links
 const navLinks = document.querySelectorAll(".nav-link");
-console.log(navLinks);
 // Get all sub navigation menus
 const subNavMenus = document.querySelectorAll(".sub-nav-menu");
 // Get both the sign up and log in links
 const signUpLoginLinks = document.querySelectorAll(".sign-up-log-in");
-
-// Add a mouseover and mouseout event listener to the Flourishtry home logo
-// This will add and remove the appropriate CSS classes
-homeLink.addEventListener("mouseover", function () {
-  const randomColor = Math.floor(Math.random() * 6) + 1;
-  homeLink.style.borderBottom = `5px solid ${colors[randomColor]}`;
-});
-homeLink.addEventListener("mouseout", function () {
-  homeLink.style.borderBottom = "";
-});
 
 /********** Adding event listeners to the main and sub navigation links **********/
 // for of loop to iterate through the HTMLCollection and add the appropriate event listeners to each navigation link

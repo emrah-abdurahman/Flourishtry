@@ -8,9 +8,7 @@ const homeLink = document.querySelector("#home-link");
 
 // Add a mouseover and mouseout event listener to the Flourishtry home logo
 // This will add and remove the appropriate CSS classes
-homeLink.addEventListener("mouseover", function (event) {
-  event.stopPropagation();
-  console.log(this);
+homeLink.addEventListener("mouseover", function () {
   const randomColor = Math.floor(Math.random() * 6) + 1;
   homeLink.style.borderBottom = `3px solid ${colors[randomColor]}`;
 });
